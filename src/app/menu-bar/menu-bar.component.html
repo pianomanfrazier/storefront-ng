@@ -1,0 +1,19 @@
+<header class="w-100 ph3 pv3 pv2-ns ph4-m ph5-1 top-0">
+  <nav class="flex justify-between bb b--white-10 f6 fw6">
+    <a class="dib link dim mr3 pointer" (click)="goBack()">
+      <i class="fa fa-chevron-left fa-2x"></i>
+    </a>
+    <div class="flex flex-grow dib mr3 f4">
+      {{title}}
+    </div>
+    <a class="flex flex-grow dib mr3 dim pointer" (click)="display = true">
+      <i class="fa fa-bars fa-2x"></i>
+    </a>
+  </nav>
+</header>
+
+<p-sidebar [(visible)]="display" position="right">
+  <nav class="list">
+    <div *ngFor="let route of routes" class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30"><a (click)="display = false" class="link black pointer" routerLink="{{ route.url }}"><i class="fa {{ route.icon }}"></i> &nbsp; {{ route.name }}</a></div>
+  </nav>
+</p-sidebar>

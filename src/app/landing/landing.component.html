@@ -1,0 +1,19 @@
+<div class="bg-dark-blue tc pv3">
+
+  <img class="mb3" src="{{ logopath }}" alt="Logo">
+
+  <br>
+
+  <app-search-bar></app-search-bar>
+
+</div>
+
+<div class="cf tc center mw7-ns">
+  <h2>Categories</h2>
+  <a *ngFor="let category of categories" class="black fl db w-50 w-25-m w-20-ns tc link dim" href="#">
+    <div class="ma2 bg-black-20 pv4">
+      <i class="fa {{ category.icon }} fa-2x pa2"></i>
+      {{ category.name }}
+    </div>
+  </a>
+</div>

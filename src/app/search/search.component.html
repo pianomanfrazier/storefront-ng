@@ -1,0 +1,9 @@
+<div class="bg-dark-blue pv3">
+
+<app-search-bar></app-search-bar>
+
+</div>
+
+<ul>
+  <li *ngFor="let item of searchResults" >{{ item.name }} -- {{ item.details }}</li>
+</ul>
