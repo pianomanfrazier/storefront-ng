@@ -6,39 +6,39 @@ import { Contact } from "./contact";
 import { Resource } from "./resource";
 
 export class ComponentDetailView {
-    type	: string;
-    dataSensitivity	: string;
-    dataSensitivityDescription	: string;
-    activeStatus	: string;
-    approvalState	: string;
-    approvalStateLabel	: string;
-    approvedDate	: Date;
-    approvedUser	: string;
-    attributes: Attribute[];
-    componentId	: string;
-    componentMedia: Media[];
-    componentType	: string;
-    componentTypeFull: ComponentTypeFull;
-    componentTypeLabel	: string;
-    componentTypeNestedModel: ComponentTypeNestedModel;
-    componentViews: number;
-    contacts: Contact[];
-    createDts	: Date;
-    createUser	: string;
-    dependencies: string[];
-    description	: string;
+    public type	: string;
+    public dataSensitivity	: string;
+    public dataSensitivityDescription	: string;
+    public activeStatus	: string;
+    public approvalState	: string;
+    public approvalStateLabel	: string;
+    public approvedDate	: Date;
+    public approvedUser	: string;
+    public attributes: Attribute[];
+    public componentId	: string;
+    public componentMedia: Media[];
+    public componentType	: string;
+    public componentTypeFull: ComponentTypeFull;
+    public componentTypeLabel	: string;
+    public componentTypeNestedModel: ComponentTypeNestedModel;
+    public componentViews: number;
+    public contacts: Contact[];
+    public createDts	: Date;
+    public createUser	: string;
+    public dependencies: string[];
+    public description	: string;
     // evaluation: 
     // fullEvaluations	[]
-    lastActivityDts	: Date;
+    public lastActivityDts	: Date;
     // metadata	[]
-    name	: string;
-    organization	: string;
+    public name	: string;
+    public organization	: string;
     // questions	[]
-    recordVersion: number;
+    public recordVersion: number;
     // relationships	[]
-    resources: Resource[];
+    public resources: Resource[];
     // reviews	[]
-    storageVersion	: string;
-    tags: string[];
-    today	: Date;
+    public storageVersion	: string;
+    public tags: string[];
+    public today	: Date;
 }
